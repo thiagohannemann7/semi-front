@@ -4,64 +4,122 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home Page</title>
-
     <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
   </head>
-
-  <style>
-    @import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
-  </style>
-
   <body>
     <nav>
       <span class="navItem" onclick="navTo('s1')">
-        <img src="../icons/home_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.png" alt="Home" />
-        <p>Home</p>
+        <img
+          src="../icons/home_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.png"
+          alt="Home"
+        />
+        <p class="navWords">Home</p>
       </span>
-
-      <span class="navItem" onclick="navTo('s2')">
-        <img src="../icons/planner_banner_ad_pt_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.png" alt="Banner" />
-        <p>Banner</p>
-      </span>
-
       <span class="navItem" onclick="navTo('s3')">
-        <img src="../icons/cards_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.png" alt="Products" />
-        <p>Cards</p>
+        <img
+          src="../icons/cards_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.png"
+          alt="Products"
+        />
+        <p class="navWords">Cards</p>
       </span>
-
       <span class="navItem" onclick="navTo('s4')">
-        <img src="../icons/video_library_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.png" alt="Vídeo" />
-        <p>Vídeo</p>
+        <img
+          src="../icons/video_library_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.png"
+          alt="Vídeo"
+        />
+        <p class="navWords">Vídeo</p>
       </span>
-
-      <span class="navItem" onclick="navTo('s5')"> </span>
-        <img src="../icons/png.png" alt="Contato" />
-        <p>Contato</p>
+      <span class="navItem" onclick="navTo('s5')">
+        <img src="../icons/contact-icon-png-15.png" alt="WhatsApp" />
+        <p class="navWords">Contato</p>
       </span>
     </nav>
 
     <main>
-      <section id="s1">
-        <h1>1</h1>
+      <section id="s1" class="s1">
+        <h1>AirtonSenna</h1>
+        <h2>Como tudo começou...</h2>
       </section>
 
-      <section id="s2">
-        <h1>2</h1>
+      <section id="s3" class="s3">
+        <div class="card">
+          <img src="../images/02.jpg" alt="" />
+          <div class="textCard">
+            <h4>AIRTONSENNA 01</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="../images/01.jpg" alt="" />
+          <div class="textCard">
+            <h4>AIRTONSENNA 02</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="../images/03.jpg" alt="" />
+          <div class="textCard">
+            <h4>AIRTONSENNA 03</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          </div>
+        </div>
       </section>
 
-      <section id="s3">
-        <h1>3</h1>
+      <section id="s4" class="s4">
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/llTiTgRn9SI?si=OHSG128jERx0YwC1"
+          title="YouTube video player"
+          frameborder="0"
+          allow="
+            accelerometer;
+            autoplay;
+            clipboard-write;
+            encrypted-media;
+            gyroscope;
+            picture-in-picture;
+            web-share;
+          "
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
       </section>
 
-      <section id="s4">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/GpQSUjNsNm0?si=pp4k_zZTTJQQn3yz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-      </section>
-
-      <section id="s5">
-        <h1>5</h1>
+      <section id="s5" class="s5">
+        <div class="formulario">
+          <label for="nome">Nome:</label>
+          <input type="text" id="nome" placeholder="Insira seu nome" />
+          <label for="assunto">Assunto:</label>
+          <textarea id="assunto" placeholder="Insira sua mensagem"></textarea>
+          <button onclick="enviar()">Enviar</button>
+        </div>
       </section>
     </main>
 
-    <footer></footer>
+    <footer>
+      <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
+        <img width="30px" src="../icons/facebook.png" alt="Facebook" />
+      </a>
+      <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+        <img width="30px" src="../icons/instagram.png" alt="Instagram" />
+      </a>
+      <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+        <img width="30px" src="../icons/linkedin.png" alt="Linkedin" />
+      </a>
+      <a href="https://github.com" target="_blank" rel="noopener noreferrer">
+        <img width="30px" src="../icons/github.png" alt="Github" />
+      </a>
+    </footer>
+
+    <script src="script.js"></script>
   </body>
 </html>
